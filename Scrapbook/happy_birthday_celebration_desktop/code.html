@@ -1,0 +1,328 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Uma's Birthday | Celebration</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&amp;family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;600&amp;family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&amp;display=swap" rel="stylesheet">
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#271818",
+                    "tertiary-fixed": "#ffd9de",
+                    "primary": "#6e595a",
+                    "surface": "#fbf9f6",
+                    "secondary-fixed-dim": "#d7c1c5",
+                    "on-primary-container": "#6c5757",
+                    "tertiary": "#844f59",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#524346",
+                    "on-surface": "#1b1c1a",
+                    "tertiary-container": "#ffc7d0",
+                    "surface-bright": "#fbf9f6",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#efeeeb",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#ebcfcf",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#350e18",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed": "#f4dde1",
+                    "surface-container-high": "#eae8e5",
+                    "secondary-container": "#f1dade",
+                    "surface-dim": "#dbdad7",
+                    "primary-fixed-dim": "#dbc0c0",
+                    "on-primary-fixed-variant": "#554242",
+                    "inverse-primary": "#dbc0c0",
+                    "surface-variant": "#e4e2df",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#6e595a",
+                    "inverse-surface": "#30312f",
+                    "primary-fixed": "#f8dcdc",
+                    "on-secondary-fixed": "#25181b",
+                    "background": "#fbf9f6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary": "#6b5a5e",
+                    "outline-variant": "#d2c3c3",
+                    "on-secondary-container": "#6f5e62",
+                    "tertiary-fixed-dim": "#f8b5c0",
+                    "on-tertiary-container": "#814d57",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "outline": "#807474",
+                    "surface-container-low": "#f5f3f0",
+                    "on-tertiary-fixed-variant": "#693842",
+                    "on-surface-variant": "#4f4444"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "64px",
+                    "unit": "8px",
+                    "container-padding": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "label-personal": ["Caveat"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"],
+                    "display": ["EB Garamond"],
+                    "label-caps": ["Inter"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "body-lg": ["Inter"],
+                    "cormorant": ["Cormorant Garamond", "serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f6;
+            background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+            overflow-x: hidden;
+        }
+        .paper-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
+        .confetti {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            pointer-events: none;
+            z-index: 10;
+            opacity: 0.6;
+            border-radius: 50%;
+        }
+        .washi-tape {
+            background-color: rgba(243, 220, 224, 0.8);
+            transform: rotate(-3deg);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    
+        body, body *:not(.material-symbols-outlined) {
+            font-family: 'Caveat', cursive !important;
+        }
+    </style>
+</head>
+<body class="text-on-background">
+<!-- Site Navigation -->
+<header class="site-header" style="position:sticky;top:0;z-index:100;width:100%;background:rgba(251,249,246,0.84);backdrop-filter:blur(10px);border-bottom:1px solid rgba(130,110,110,0.14);">
+  <nav style="max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <a href="../home_happy_birthday_uma_desktop/code.html" style="font-family:'Caveat',cursive;font-size:1rem;font-weight:700;letter-spacing:0.03em;color:#6e595a;text-decoration:none;white-space:nowrap;">Uma's Birthday</a>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;font-family:'Caveat',cursive;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="../home_happy_birthday_uma_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Home</a>
+      <a href="../happy_birthday_celebration_desktop/code.html" style="color:#6e595a;font-weight:700;text-decoration:none;border-bottom:1px solid #6e595a;padding-bottom:2px;white-space:nowrap;">Celebration</a>
+      <a href="../dear_uma_a_letter_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Letter</a>
+      <a href="../you_gallery_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Gallery</a>
+      <a href="../our_future_moodboard_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Future</a>
+      <a href="../little_notes_board_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Notes</a>
+      <a href="../us_date_memories_with_notes_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Memories</a>
+      <a href="../forever_finale_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Finale</a>
+    </div>
+  </nav>
+</header>
+<main class="relative min-h-screen pt-24 pb-32 max-w-[1200px] mx-auto px-container-padding">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center mb-section-gap fade-in">
+<span class="text-label-caps font-label-caps text-secondary mb-4 tracking-[0.2em]">A SPECIAL DAY</span>
+<h2 class="font-cormorant text-[64px] leading-tight font-semibold text-primary mb-8 italic">Happy Birthday, Uma</h2>
+<!-- Central Line Art Illustration (Cake) -->
+<div class="relative w-64 h-64 mb-12 flex items-center justify-center">
+<div class="absolute inset-0 flex items-center justify-center opacity-20">
+<div class="w-full h-full rounded-full border border-primary-container animate-pulse"></div>
+</div>
+<!-- Abstract Line Art Cake with Bow -->
+<svg class="w-full h-full text-primary opacity-80" fill="none" stroke="currentColor" stroke-width="0.7" viewBox="0 0 100 100">
+<!-- Cake base -->
+<path d="M30,80 L70,80 L70,55 L30,55 Z"></path>
+<!-- Top layer -->
+<path d="M35,55 L65,55 L65,40 L35,40 Z"></path>
+<!-- Candles -->
+<line x1="40" x2="40" y1="40" y2="30"></line>
+<line x1="50" x2="50" y1="40" y2="28"></line>
+<line x1="60" x2="60" y1="40" y2="30"></line>
+<!-- Flames -->
+<circle cx="40" cy="27" r="1.5" stroke-width="0.5"></circle>
+<circle cx="50" cy="24" r="1.5" stroke-width="0.5"></circle>
+<circle cx="60" cy="27" r="1.5" stroke-width="0.5"></circle>
+<!-- The Tiny Bow -->
+<path class="text-tertiary" d="M45,67 C42,65 40,68 45,70 C50,72 52,65 55,67 C58,69 55,72 50,70"></path>
+<circle cx="50" cy="69" fill="currentColor" r="1"></circle>
+</svg>
+</div>
+<!-- Signature Bow Motif -->
+<div class="flex items-center gap-4 mb-8">
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+<span class="font-label-personal text-primary text-3xl">🪽</span>
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+</div>
+</section>
+<!-- Memory Bento Grid -->
+<section class="grid grid-cols-12 gap-gutter mb-section-gap">
+<!-- Large Polaroid Card -->
+<div class="col-span-12 md:col-span-7 relative group transform -rotate-1 hover:rotate-0 transition-transform duration-500">
+<div class="bg-white p-6 shadow-[0_4px_20px_0_rgba(62,62,62,0.04)] rounded-none">
+<div class="absolute top-[-10px] left-1/2 -translate-x-1/2 w-20 h-6 washi-tape z-20"></div>
+<div class="aspect-[4/5] overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover" data-alt="A vintage-style film photograph of a joyful woman laughing in a field of wildflowers during the golden hour. The lighting is soft and warm, with a dreamy, ethereal quality. The color palette features dusty pinks, warm ivories, and soft earthy tones, evoking a timeless digital heirloom aesthetic." src="../Images/Date/IMG_20260708_175540.jpg">
+</div>
+<p class="font-label-personal text-primary text-2xl text-center">Radiant at nineteen</p>
+</div>
+</div>
+<!-- Small Moments -->
+<div class="col-span-12 md:col-span-5 flex flex-col gap-gutter">
+<div class="bg-white p-container-padding shadow-[0_4px_20px_0_rgba(62,62,62,0.04)] rounded-none transform rotate-1 hover:rotate-0 transition-transform duration-500">
+<span class="text-label-caps font-label-caps text-tertiary block mb-4">THE WISH</span>
+<p class="font-headline-md text-headline-md text-on-surface italic leading-relaxed">
+                        "May your year be as soft as a summer breeze and as bright as the morning sun."
+                    </p>
+<div class="mt-6 font-label-personal text-secondary text-right">— Forever yours</div>
+</div>
+<div class="bg-primary-container/20 p-container-padding flex-1 relative overflow-hidden flex flex-col justify-center items-center">
+
+<div class="relative z-10 text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">favorite</span>
+<p class="font-label-caps text-on-primary-container">CHERISHED MOMENTS</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Birthday Wish Area -->
+<section class="max-w-[800px] mx-auto text-center fade-in" style="animation-delay: 0.5s;">
+<div class="bg-white p-12 shadow-[0_4px_20px_0_rgba(62,62,62,0.04)] border border-surface-container-high relative">
+<!-- Vellum-like overlay feel -->
+<div class="absolute inset-0 bg-white/50 pointer-events-none"></div>
+<h3 class="font-cormorant text-headline-lg italic text-secondary mb-12">Leave a special note</h3>
+<div class="relative mb-12">
+<textarea id="uma-special-note" class="w-full bg-transparent border-none border-b border-outline-variant font-label-personal text-2xl text-primary focus:ring-0 resize-none min-h-[150px] placeholder:text-outline-variant/50" placeholder="Write your heartfelt message here..."></textarea>
+<div class="absolute bottom-0 left-0 w-full h-px bg-primary scale-x-0 transition-transform duration-500 origin-left hover:scale-x-100"></div>
+</div>
+<button id="send-special-note" type="button" class="bg-primary-container text-on-primary-container font-label-caps tracking-widest px-12 py-4 rounded-full hover:scale-105 transition-transform duration-300 shadow-sm active:scale-95">
+                    SEND WITH LOVE
+                </button>
+</div>
+<div class="mt-16 flex justify-center opacity-40">
+<svg class="text-primary" height="40" viewBox="0 0 200 40" width="200">
+<path d="M0,20 Q50,0 100,20 Q150,40 200,20" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+<path d="M90,20 C85,15 80,15 85,20 C90,25 95,25 90,30 C85,35 115,35 110,30 C105,25 110,25 115,20 C120,15 115,15 110,20" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+</svg>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-outline-variant/30 py-section-gap bg-transparent">
+<div class="flex flex-col items-center gap-unit w-full max-w-[1200px] mx-auto px-container-padding text-center">
+<div class="font-label-personal text-label-personal text-secondary mb-2">With love for Uma</div>
+<nav class="flex gap-8 mb-4">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="../home_happy_birthday_uma_desktop/code.html">Our Story</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="../you_gallery_desktop/code.html">Gallery</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="../happy_birthday_celebration_desktop/code.html">Leave a Wish</a>
+</nav>
+<div class="text-[10px] text-outline tracking-[0.3em] font-label-caps uppercase">© 2024 Digital Heirloom Preservation</div>
+</div>
+</footer>
+<!-- Bottom Nav Bar (Mobile Only Hidden via Platform Anchor Rules but defined for spec) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex md:hidden justify-around items-center px-gutter pb-8 pt-4 bg-surface/80 backdrop-blur-md shadow-[0_-4px_20px_0_rgba(62,62,62,0.04)]">
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container rounded-full p-3 text-on-primary-container">
+<span class="material-symbols-outlined">celebration</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">book</span>
+</div>
+</nav>
+<script>
+        // Subtle Confetti Effect
+        const colors = ['#EBCFCF', '#F3DCE0', '#fbf9f6', '#dbc0c0'];
+        
+        function createConfetti() {
+            const container = document.body;
+            for (let i = 0; i < 40; i++) {
+                const confetto = document.createElement('div');
+                confetto.className = 'confetti';
+                
+                const size = Math.random() * 6 + 4;
+                confetto.style.width = `${size}px`;
+                confetto.style.height = `${size}px`;
+                confetto.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                confetto.style.left = Math.random() * 100 + 'vw';
+                confetto.style.top = -10 + 'px';
+                
+                container.appendChild(confetto);
+                
+                const duration = Math.random() * 10 + 5;
+                const delay = Math.random() * 5;
+                
+                confetto.animate([
+                    { transform: 'translateY(0) rotate(0)', opacity: 0.6 },
+                    { transform: `translateY(100vh) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                ], {
+                    duration: duration * 1000,
+                    delay: delay * 1000,
+                    iterations: Infinity,
+                    easing: 'linear'
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            createConfetti();
+
+            const noteInput = document.getElementById('uma-special-note');
+            const sendButton = document.getElementById('send-special-note');
+            if (noteInput && sendButton) {
+                sendButton.addEventListener('click', () => {
+                    const note = noteInput.value.trim();
+                    const message = encodeURIComponent(
+                        note ? `A special note from Uma:\n\n${note}` : 'A special note from Uma:'
+                    );
+                    window.location.href = `https://wa.me/919916552231?text=${message}`;
+                });
+            }
+            
+            // Micro-interaction for memory cards
+            document.querySelectorAll('.group').forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    const shader = card.querySelector('webgl-shader');
+                    if (shader) shader.style.opacity = '0.5';
+                });
+                card.addEventListener('mouseleave', () => {
+                    const shader = card.querySelector('webgl-shader');
+                    if (shader) shader.style.opacity = '0.3';
+                });
+            });
+        });
+    </script>
+</body></html>

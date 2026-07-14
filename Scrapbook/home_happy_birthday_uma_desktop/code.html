@@ -1,0 +1,294 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Uma's Birthday | Home</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Inter:wght@300;400;600&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#271818",
+                    "tertiary-fixed": "#ffd9de",
+                    "primary": "#6e595a",
+                    "surface": "#fbf9f6",
+                    "secondary-fixed-dim": "#d7c1c5",
+                    "on-primary-container": "#6c5757",
+                    "tertiary": "#844f59",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#524346",
+                    "on-surface": "#1b1c1a",
+                    "tertiary-container": "#ffc7d0",
+                    "surface-bright": "#fbf9f6",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#efeeeb",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#ebcfcf",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#350e18",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed": "#f4dde1",
+                    "surface-container-high": "#eae8e5",
+                    "secondary-container": "#f1dade",
+                    "surface-dim": "#dbdad7",
+                    "primary-fixed-dim": "#dbc0c0",
+                    "on-primary-fixed-variant": "#554242",
+                    "inverse-primary": "#dbc0c0",
+                    "surface-variant": "#e4e2df",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#6e595a",
+                    "inverse-surface": "#30312f",
+                    "primary-fixed": "#f8dcdc",
+                    "on-secondary-fixed": "#25181b",
+                    "background": "#fbf9f6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary": "#6b5a5e",
+                    "outline-variant": "#d2c3c3",
+                    "on-secondary-container": "#6f5e62",
+                    "tertiary-fixed-dim": "#f8b5c0",
+                    "on-tertiary-container": "#814d57",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "outline": "#807474",
+                    "surface-container-low": "#f5f3f0",
+                    "on-tertiary-fixed-variant": "#693842",
+                    "on-surface-variant": "#4f4444"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "64px",
+                    "unit": "8px",
+                    "container-padding": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "label-personal": ["Caveat"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"],
+                    "cormorant": ["Cormorant Garamond", "serif"],
+                    "display": ["EB Garamond"],
+                    "label-caps": ["Inter"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-personal": ["22px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .paper-grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.04;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
+
+        .bow-svg {
+            stroke: #6e595a;
+            fill: none;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .tilt-1 { transform: rotate(-1deg); }
+        .tilt-2 { transform: rotate(1.5deg); }
+        
+        .memory-card {
+            background: #ffffff;
+            box-shadow: 0 4px 20px 0 rgba(62, 62, 62, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .memory-card:hover {
+            transform: translateY(-8px) rotate(0deg);
+            box-shadow: 0 8px 30px 0 rgba(62, 62, 62, 0.06);
+        }
+
+        .washi-tape {
+            background: rgba(243, 220, 224, 0.8);
+            width: 60px;
+            height: 20px;
+            transform: rotate(-3deg);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+    
+        body, body *:not(.material-symbols-outlined) {
+            font-family: 'Caveat', cursive !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<div class="paper-grain"></div>
+<!-- Site Navigation -->
+<header class="site-header" style="position:sticky;top:0;z-index:100;width:100%;background:rgba(251,249,246,0.84);backdrop-filter:blur(10px);border-bottom:1px solid rgba(130,110,110,0.14);">
+  <nav style="max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <a href="../home_happy_birthday_uma_desktop/code.html" style="font-family:'Caveat',cursive;font-size:1rem;font-weight:700;letter-spacing:0.03em;color:#6e595a;text-decoration:none;white-space:nowrap;">Uma's Birthday</a>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;font-family:'Caveat',cursive;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="../home_happy_birthday_uma_desktop/code.html" style="color:#6e595a;font-weight:700;text-decoration:none;border-bottom:1px solid #6e595a;padding-bottom:2px;white-space:nowrap;">Home</a>
+      <a href="../happy_birthday_celebration_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Celebration</a>
+      <a href="../dear_uma_a_letter_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Letter</a>
+      <a href="../you_gallery_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Gallery</a>
+      <a href="../our_future_moodboard_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Future</a>
+      <a href="../little_notes_board_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Notes</a>
+      <a href="../us_date_memories_with_notes_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Memories</a>
+      <a href="../forever_finale_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Finale</a>
+    </div>
+  </nav>
+</header>
+<main class="pt-24 pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-container-padding text-center flex flex-col items-center">
+<!-- Hero Image with Bow Decoration -->
+<div class="relative mt-8 mb-12">
+<!-- Handwritten Bow Line-art -->
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10 w-24 h-12">
+<svg class="bow-svg" viewBox="0 0 100 50">
+<path d="M50,25 C30,10 10,25 30,35 C40,40 50,25 50,25 C50,25 60,40 70,35 C90,25 70,10 50,25 Z"></path>
+<path d="M50,25 L45,45 M50,25 L55,45"></path>
+</svg>
+</div>
+<div class="memory-card p-4 rounded-[40px] md:rounded-[80px] tilt-1 max-w-lg mx-auto">
+<img class="w-full h-[500px] object-cover rounded-[32px] md:rounded-[72px]" data-alt="A premium, soft-focus vertical portrait of a beautiful woman named Uma smiling radiantly. She is outdoors during golden hour, with warm sunlight catching the edges of her hair. The aesthetic is clean, sophisticated, and evokes a high-end fashion editorial or a curated Pinterest board. The colors are muted tones of ivory, soft pink, and warm browns, perfectly aligning with a digital heirloom scrapbook style." src="../Images/Date/IMG_20260708_155025.jpg">
+</div>
+</div>
+<h1 class="font-cormorant italic text-[64px] md:text-[84px] leading-none text-primary mb-6">
+                Happy Birthday <span class="not-italic">/</span> Uma ♡
+            </h1>
+<p class="font-label-personal text-label-personal text-secondary max-w-md mx-auto mb-10 leading-relaxed">
+                "i really tried putting everything i feel into one page... couldn't... so i built this little place instead."
+            </p>
+<button class="group flex items-center gap-3 bg-primary-container text-on-primary-container px-10 py-4 rounded-full hover:scale-105 transition-transform duration-300">
+<span class="font-label-caps text-label-caps">COME HERE 🤍</span>
+</button>
+</section>
+<!-- Signature Divider -->
+<div class="flex justify-center py-section-gap">
+<div class="w-32 h-px bg-outline-variant/30 relative">
+<span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-label-personal text-primary bg-background px-4">with love</span>
+</div>
+</div>
+<!-- Bento Memories Grid -->
+<section class="max-w-[1200px] mx-auto px-container-padding">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Polaroid -->
+<div class="md:col-span-7">
+<div class="memory-card p-6 rounded-xl tilt-1 relative h-full">
+<div class="washi-tape absolute -top-2 left-12 z-10"></div>
+<img class="w-full h-[400px] object-cover rounded-lg mb-4" data-alt="A wide shot of a serene celebration setting with elegant table decor. Soft linen napkins, delicate floral arrangements in blush tones, and glowing candles create a warm, intimate atmosphere. The lighting is diffused and romantic, capturing the essence of a premium birthday dinner. The style is minimalist and high-end, using a palette of creams, dusty roses, and earthy browns." src="../Images/Date/IMG_20260708_180410.jpg">
+<span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container font-label-caps text-[10px] rounded-full mb-2">MOMENTS</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">The quiet moments are my favorite.</h3>
+</div>
+</div>
+<!-- Side Column Bento -->
+<div class="md:col-span-5 grid grid-rows-2 gap-gutter">
+<!-- Wish Card -->
+<div class="memory-card p-6 rounded-xl tilt-2 bg-secondary-container/30 border-none flex flex-col justify-center">
+<span class="material-symbols-outlined text-tertiary mb-4" style="font-size: 40px;">auto_awesome</span>
+<p class="font-headline-md text-headline-md text-on-secondary-container mb-2 italic">A year of magic.</p>
+<p class="font-body-md text-body-md text-on-secondary-container/80">May this new chapter be as bright and beautiful as the soul you are.</p>
+</div>
+<!-- Small Photo Card -->
+<div class="memory-card p-4 rounded-xl -rotate-1 relative">
+<div class="washi-tape absolute -top-1 right-8 z-10 bg-primary/20"></div>
+<div class="flex gap-4 items-center">
+<img class="w-24 h-24 rounded-full object-cover" data-alt="A close-up shot of a beautiful, small birthday cake with a single thin candle. The cake is decorated with minimal white frosting and a few sprigs of baby's breath. The lighting is soft and airy, emphasizing the delicate textures. The background is a clean ivory surface, maintaining the minimalist and premium scrapbook aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4iDMal-OkoVFDkomoa1wR4fPELgvNrb3Pmeb5IYS9bSgYKyTSLh2_6oHczp3ZDG8ynZQALgm4l_SNr3cvEgoTqxGYg5PI0Y8RZtr3sOUkyImKRpzY2uKIGwHdY2aDf3dKObpfvmuFsMN_tLUZM6SJ9nxfZ_Nks0lGkbwvWa17VpcFkaW2Vn3zrUSTuRceLrM1o35FSX3gXcdRCjkLMyJ5rWq0-SL-wssuoGeQpfFE-pCHV_96fJn_zQ">
+<div>
+<p class="font-label-caps text-label-caps text-primary">BIRTHDAY CAKE</p>
+<p class="font-label-personal text-label-personal text-on-surface-variant">just a little sweetness...</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-outline-variant/30 py-section-gap">
+<div class="flex flex-col items-center gap-unit w-full max-w-[1200px] mx-auto px-container-padding text-center">
+<div class="font-label-personal text-label-personal text-secondary mb-4">With love for Uma</div>
+<div class="flex gap-8 mb-8">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="../home_happy_birthday_uma_desktop/code.html">Our Story</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="../you_gallery_desktop/code.html">Gallery</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="../happy_birthday_celebration_desktop/code.html">Leave a Wish</a>
+</div>
+<div class="w-12 h-px bg-outline-variant"></div>
+<p class="mt-8 font-label-caps text-label-caps text-on-surface-variant/50">© 2024 COLLECTED MEMORIES</p>
+</div>
+</footer>
+<!-- Bottom Nav for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter pb-8 pt-4 bg-surface/80 backdrop-blur-md shadow-[0_-4px_20px_0_rgba(62,62,62,0.04)]">
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full p-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">book</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">celebration</span>
+</button>
+</nav>
+<!-- Interactive Layer -->
+<script>
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.memory-card');
+            const x = (window.innerWidth / 2 - e.pageX) / 50;
+            const y = (window.innerHeight / 2 - e.pageY) / 50;
+            
+            cards.forEach(card => {
+                if (!card.matches(':hover')) {
+                    // Subtle parallax for non-hovered cards
+                    card.style.transform = `translate(${x}px, ${y}px) ${card.classList.contains('tilt-1') ? 'rotate(-1deg)' : card.classList.contains('tilt-2') ? 'rotate(1.5deg)' : 'rotate(0deg)'}`;
+                }
+            });
+        });
+
+        // Soft interaction on the button
+        const mainBtn = document.querySelector('button.group');
+        mainBtn.addEventListener('mousedown', () => mainBtn.style.transform = 'scale(0.95)');
+        mainBtn.addEventListener('mouseup', () => mainBtn.style.transform = 'scale(1.05)');
+    </script>
+</body></html>

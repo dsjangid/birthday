@@ -1,0 +1,389 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Uma's Birthday | Notes</title>
+<meta content="A collection of little notes and memories for Uma." name="description">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@100..900&amp;family=EB+Garamond:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Design Tokens -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#271818",
+                    "tertiary-fixed": "#ffd9de",
+                    "primary": "#6e595a",
+                    "surface": "#fbf9f6",
+                    "secondary-fixed-dim": "#d7c1c5",
+                    "on-primary-container": "#6c5757",
+                    "tertiary": "#844f59",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#524346",
+                    "on-surface": "#1b1c1a",
+                    "tertiary-container": "#ffc7d0",
+                    "surface-bright": "#fbf9f6",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#efeeeb",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#ebcfcf",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#350e18",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed": "#f4dde1",
+                    "surface-container-high": "#eae8e5",
+                    "secondary-container": "#f1dade",
+                    "surface-dim": "#dbdad7",
+                    "primary-fixed-dim": "#dbc0c0",
+                    "on-primary-fixed-variant": "#554242",
+                    "inverse-primary": "#dbc0c0",
+                    "surface-variant": "#e4e2df",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#6e595a",
+                    "inverse-surface": "#30312f",
+                    "primary-fixed": "#f8dcdc",
+                    "on-secondary-fixed": "#25181b",
+                    "background": "#fbf9f6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary": "#6b5a5e",
+                    "outline-variant": "#d2c3c3",
+                    "on-secondary-container": "#6f5e62",
+                    "tertiary-fixed-dim": "#f8b5c0",
+                    "on-tertiary-container": "#814d57",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "outline": "#807474",
+                    "surface-container-low": "#f5f3f0",
+                    "on-tertiary-fixed-variant": "#693842",
+                    "on-surface-variant": "#4f4444"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "64px",
+                    "unit": "8px",
+                    "container-padding": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "label-personal": ["Caveat"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"],
+                    "display": ["EB Garamond"],
+                    "label-caps": ["Inter"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-personal": ["22px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .paper-grain {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+        .washi-tape {
+            background-color: rgba(243, 220, 224, 0.8);
+            width: 60px;
+            height: 18px;
+            transform: rotate(-3deg);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .note-card {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+            cursor: grab;
+            user-select: none;
+        }
+
+        .note-card:active {
+            cursor: grabbing;
+        }
+
+        .note-card:hover {
+            z-index: 50 !important;
+            box-shadow: 0 20px 30px rgba(62, 62, 62, 0.06);
+            transform: scale(1.05) rotate(0deg) !important;
+        }
+
+        .board-container {
+            min-height: 2000px;
+            width: 100%;
+            position: relative;
+            background-color: #FAF8F5;
+            overflow: hidden;
+        }
+
+        /* Bow Divider Style */
+        .bow-divider::after {
+            content: "🎀";
+            font-family: "Caveat", cursive;
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+            color: #EBCFCF;
+            margin-top: 2rem;
+        }
+    
+        body, body *:not(.material-symbols-outlined) {
+            font-family: 'Caveat', cursive !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container">
+<!-- Site Navigation -->
+<header class="site-header" style="position:sticky;top:0;z-index:100;width:100%;background:rgba(251,249,246,0.84);backdrop-filter:blur(10px);border-bottom:1px solid rgba(130,110,110,0.14);">
+  <nav style="max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <a href="../home_happy_birthday_uma_desktop/code.html" style="font-family:'Caveat',cursive;font-size:1rem;font-weight:700;letter-spacing:0.03em;color:#6e595a;text-decoration:none;white-space:nowrap;">Uma's Birthday</a>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;font-family:'Caveat',cursive;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="../home_happy_birthday_uma_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Home</a>
+      <a href="../happy_birthday_celebration_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Celebration</a>
+      <a href="../dear_uma_a_letter_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Letter</a>
+      <a href="../you_gallery_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Gallery</a>
+      <a href="../our_future_moodboard_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Future</a>
+      <a href="../little_notes_board_desktop/code.html" style="color:#6e595a;font-weight:700;text-decoration:none;border-bottom:1px solid #6e595a;padding-bottom:2px;white-space:nowrap;">Notes</a>
+      <a href="../us_date_memories_with_notes_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Memories</a>
+      <a href="../forever_finale_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Finale</a>
+    </div>
+  </nav>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32">
+<!-- Hero Section -->
+<header class="max-w-[1200px] mx-auto px-container-padding text-center mb-16">
+<span class="inline-block bg-primary-container text-on-primary-container px-4 py-1 rounded-full font-label-caps text-label-caps mb-4">MOMENTS</span>
+<h2 class="font-display text-display mb-4 italic">The "Little Notes" Board</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">A collection of whispers, memories, and reasons why we adore you. Hover over any note to see it more clearly.</p>
+<div class="bow-divider"></div>
+</header>
+<!-- Expansive Board Area -->
+<div class="board-container paper-grain-wrapper relative">
+<div class="paper-grain absolute inset-0"></div>
+<div class="max-w-[1400px] mx-auto relative h-full" id="notes-grid">
+<!-- Notes will be injected here via JS for 80 units -->
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<footer class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter pb-8 pt-4 bg-surface/80 backdrop-blur-md shadow-[0_-4px_20px_0_rgba(62,62,62,0.04)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform" href="../home_happy_birthday_uma_desktop/code.html">
+<span class="material-symbols-outlined">auto_awesome</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full p-3 hover:scale-110 transition-transform" href="../home_happy_birthday_uma_desktop/code.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform" href="../home_happy_birthday_uma_desktop/code.html">
+<span class="material-symbols-outlined">book</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform" href="../home_happy_birthday_uma_desktop/code.html">
+<span class="material-symbols-outlined">celebration</span>
+</a>
+</footer>
+<!-- FAB for adding notes (Only on Dashboard/Board) -->
+<button class="fixed right-8 bottom-28 w-14 h-14 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-all z-50">
+<span class="material-symbols-outlined">add</span>
+</button>
+<script>
+        const messages = [
+            "you're still my favourite notification 🤍",
+            "thank you for making life softer",
+            "i still smile because of you",
+            "your laugh is still my favourite sound",
+            "home somehow became you",
+            "i hope you always choose yourself too",
+            "you're prettier than you believe",
+            "your heart is my favourite thing about you",
+            "thank you for staying",
+            "i'll never get tired of you",
+            "you're my safest place",
+            "i still get excited to talk to you",
+            "your hugs are my happy place",
+            "i hope today feels as beautiful as you",
+            "thank you for loving me",
+            "you're worth every little effort",
+            "you make ordinary moments unforgettable",
+            "i hope you never lose your smile",
+            "i'm proud of the person you're becoming",
+            "i choose you...always",
+            "your smile fixes bad days",
+            "you're the calm after my chaos",
+            "i still miss you even after talking to you",
+            "i love the little things about you",
+            "thank you for being you",
+            "you deserve every good thing",
+            "you're my favourite chapter",
+            "i still fall for you every day",
+            "you make my world quieter",
+            "your happiness matters to me",
+            "i hope you always feel loved",
+            "you're the best part of my day",
+            "your eyes still make me pause",
+            "forever sounds nicer with you",
+            "i still remember our little moments",
+            "you make my heart feel at home",
+            "i hope i never stop making you smile",
+            "you're my favourite person to annoy 😭",
+            "i still can't believe i found you",
+            "thank you for every little memory",
+            "you make love feel easy",
+            "i'll always cheer for you",
+            "you're my comfort person",
+            "your existence is enough",
+            "every photo of you becomes my favourite",
+            "you deserve slow mornings and peaceful nights",
+            "i'm lucky you happened to me",
+            "your kindness amazes me",
+            "don't forget how loved you are",
+            "you're still the one i'd choose",
+            "i hope life stays gentle with you",
+            "i love the way you care",
+            "you make everything brighter",
+            "your voice feels like home",
+            "i'll always be proud of you",
+            "you're beautiful...inside first",
+            "i hope you never doubt your worth",
+            "thank you for every smile",
+            "i'm grateful for us",
+            "your heart deserves the world",
+            "i still blush because of you sometimes",
+            "every day with you is my favourite day",
+            "you're my favourite coincidence",
+            "i hope i keep making you feel safe",
+            "thank you for every \"good morning\"",
+            "you're stronger than you realise",
+            "you're the peace i never knew i needed",
+            "i'll always make room for you",
+            "you make love feel like home",
+            "i hope we keep making memories forever",
+            "i still look at your photos and smile",
+            "you make my heart feel full",
+            "i love every version of you",
+            "thank you for trusting me",
+            "you're my little sunshine 🌸",
+            "i hope this page makes you smile",
+            "you deserve a lifetime of happiness",
+            "my favourite story will always be us",
+            "happy birthday to my favourite person ♡",
+            "i'll always be glad that i met you"
+        ];
+
+        const notesGrid = document.getElementById('notes-grid');
+        const boardWidth = 1400;
+        const boardHeight = 1800;
+
+        function createNote(index) {
+            const isPink = Math.random() > 0.5;
+            const rotation = (Math.random() * 10 - 5).toFixed(1);
+            const x = Math.random() * (boardWidth - 250);
+            const y = Math.random() * (boardHeight - 200);
+            
+            const card = document.createElement('div');
+            card.className = `note-card absolute p-6 rounded-sm w-[220px] min-h-[140px] flex flex-col justify-between ${isPink ? 'bg-primary-container/40' : 'bg-white'} shadow-sm`;
+            card.draggable = true;
+            card.style.transform = `rotate(${rotation}deg)`;
+            card.style.left = `${x}px`;
+            card.style.top = `${y}px`;
+            card.style.zIndex = Math.floor(Math.random() * 20);
+            card.dataset.rotation = rotation;
+
+            // Add washi tape occasionally
+            if (Math.random() > 0.4) {
+                const tape = document.createElement('div');
+                tape.className = 'washi-tape absolute -top-2 left-1/2 -translate-x-1/2 opacity-80';
+                card.appendChild(tape);
+            }
+
+            const text = document.createElement('p');
+            text.className = 'font-label-personal text-label-personal text-on-surface-variant text-center my-auto leading-tight pointer-events-none';
+            text.innerText = messages[index % messages.length];
+            
+            const footer = document.createElement('div');
+            footer.className = 'flex justify-between items-center mt-4 opacity-30 pointer-events-none';
+            footer.innerHTML = `
+                <span class="material-symbols-outlined text-xs">favorite</span>
+                <span class="text-[10px] font-label-caps">UMA • 2024</span>
+            `;
+
+            card.appendChild(text);
+            card.appendChild(footer);
+
+            // Drag event listeners
+            let offsetX = 0;
+            let offsetY = 0;
+
+            card.addEventListener('dragstart', (e) => {
+                card.style.opacity = '0.8';
+                card.style.zIndex = '1000';
+                const rect = card.getBoundingClientRect();
+                offsetX = e.clientX - rect.left;
+                offsetY = e.clientY - rect.top;
+                e.dataTransfer.effectAllowed = 'move';
+            });
+
+            card.addEventListener('dragend', (e) => {
+                card.style.opacity = '1';
+                card.style.zIndex = Math.floor(Math.random() * 20);
+            });
+
+            notesGrid.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+            });
+
+            card.addEventListener('drag', (e) => {
+                if (e.clientX !== 0 && e.clientY !== 0) {
+                    const gridRect = notesGrid.getBoundingClientRect();
+                    const newX = e.clientX - gridRect.left - offsetX;
+                    const newY = e.clientY - gridRect.top - offsetY;
+                    card.style.left = `${Math.max(0, Math.min(newX, boardWidth - 220))}px`;
+                    card.style.top = `${Math.max(0, Math.min(newY, boardHeight - 140))}px`;
+                }
+            });
+            
+            return card;
+        }
+
+        // Generate 80 notes
+        for (let i = 0; i < 80; i++) {
+            notesGrid.appendChild(createNote(i));
+        }
+
+        // Simple mouse interaction parallax for atmospheric feel
+        window.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            notesGrid.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    </script>
+</body></html>

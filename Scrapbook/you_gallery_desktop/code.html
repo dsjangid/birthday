@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="en" class="light"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#271818",
+                      "tertiary-fixed": "#ffd9de",
+                      "primary": "#6e595a",
+                      "surface": "#fbf9f6",
+                      "secondary-fixed-dim": "#d7c1c5",
+                      "on-primary-container": "#6c5757",
+                      "tertiary": "#844f59",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed-variant": "#524346",
+                      "on-surface": "#1b1c1a",
+                      "tertiary-container": "#ffc7d0",
+                      "surface-bright": "#fbf9f6",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#efeeeb",
+                      "error-container": "#ffdad6",
+                      "primary-container": "#ebcfcf",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed": "#350e18",
+                      "inverse-on-surface": "#f2f0ed",
+                      "secondary-fixed": "#f4dde1",
+                      "surface-container-high": "#eae8e5",
+                      "secondary-container": "#f1dade",
+                      "surface-dim": "#dbdad7",
+                      "primary-fixed-dim": "#dbc0c0",
+                      "on-primary-fixed-variant": "#554242",
+                      "inverse-primary": "#dbc0c0",
+                      "surface-variant": "#e4e2df",
+                      "on-tertiary": "#ffffff",
+                      "surface-tint": "#6e595a",
+                      "inverse-surface": "#30312f",
+                      "primary-fixed": "#f8dcdc",
+                      "on-secondary-fixed": "#25181b",
+                      "background": "#fbf9f6",
+                      "on-secondary": "#ffffff",
+                      "surface-container-highest": "#e4e2df",
+                      "secondary": "#6b5a5e",
+                      "outline-variant": "#d2c3c3",
+                      "on-secondary-container": "#6f5e62",
+                      "tertiary-fixed-dim": "#f8b5c0",
+                      "on-tertiary-container": "#814d57",
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#1b1c1a",
+                      "outline": "#807474",
+                      "surface-container-low": "#f5f3f0",
+                      "on-tertiary-fixed-variant": "#693842",
+                      "on-surface-variant": "#4f4444"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "64px",
+                      "unit": "8px",
+                      "container-padding": "24px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "label-personal": ["Caveat"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["EB Garamond"],
+                      "headline-lg": ["EB Garamond"],
+                      "display": ["EB Garamond"],
+                      "label-caps": ["Inter"],
+                      "headline-lg-mobile": ["EB Garamond"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "label-personal": ["22px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                      "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    }catch(_e){}</script><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@100..900&amp;family=EB+Garamond:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>
+        body, body *:not(.material-symbols-outlined) {
+            font-family: 'Caveat', cursive !important;
+        }
+
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 24px;
+        }
+        @media (min-width: 768px) {
+            .masonry-grid { column-count: 3; }
+        }
+        .memory-card {
+            break-inside: avoid;
+            margin-bottom: 24px;
+            transform: rotate(var(--card-rotation, 0deg));
+            transform-origin: center;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        .memory-card:hover {
+            transform: rotate(var(--card-rotation, 0deg)) translateY(-8px) scale(1.02);
+            box-shadow: 0 24px 40px rgba(62, 62, 62, 0.12);
+        }
+        .washi-tape {
+            background: rgba(243, 220, 224, 0.82);
+            transform: translateX(-50%) rotate(-3deg);
+        }
+        .gallery-frame {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-frame img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .gallery-frame.is-rotated img {
+            width: 56.25%;
+            height: 177.7778%;
+            max-width: none;
+            max-height: none;
+            object-fit: fill;
+            transform: rotate(-90deg);
+        }
+        .gallery-frame.is-rotated img:hover {
+            transform: rotate(-90deg) scale(1.04);
+        }
+</style>
+</head><body class="bg-background text-on-background min-h-screen">
+<!-- Site Navigation -->
+<header class="site-header" style="position:sticky;top:0;z-index:100;width:100%;background:rgba(251,249,246,0.84);backdrop-filter:blur(10px);border-bottom:1px solid rgba(130,110,110,0.14);">
+  <nav style="max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <a href="../home_happy_birthday_uma_desktop/code.html" style="font-family:'Caveat',cursive;font-size:1rem;font-weight:700;letter-spacing:0.03em;color:#6e595a;text-decoration:none;white-space:nowrap;">Uma's Birthday</a>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;font-family:'Caveat',cursive;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="../home_happy_birthday_uma_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Home</a>
+      <a href="../happy_birthday_celebration_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Celebration</a>
+      <a href="../dear_uma_a_letter_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Letter</a>
+      <a href="../you_gallery_desktop/code.html" style="color:#6e595a;font-weight:700;text-decoration:none;border-bottom:1px solid #6e595a;padding-bottom:2px;white-space:nowrap;">Gallery</a>
+      <a href="../our_future_moodboard_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Future</a>
+      <a href="../little_notes_board_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Notes</a>
+      <a href="../us_date_memories_with_notes_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Memories</a>
+      <a href="../forever_finale_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Finale</a>
+    </div>
+  </nav>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-[1200px] mx-auto px-container-padding pb-section-gap">
+<!-- Header Section -->
+<section class="pt-section-gap pb-12 text-center">
+<h1 class="font-display text-display text-primary mb-2">Uma's Birthday</h1>
+<p class="font-label-personal text-label-personal text-secondary italic">A digital scrapbook of Uma's first magical year</p>
+<div class="mt-8 flex justify-center opacity-40">
+<!-- Signature Bow Motif Divider -->
+<span class="custom-bow text-4xl text-primary transform rotate-12">୨ৎ</span>
+</div>
+</section>
+<!-- Masonry Gallery -->
+<div class="masonry-grid" id="memory-gallery"></div>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter pb-8 pt-4 bg-surface/80 backdrop-blur-md shadow-[0_-4px_20px_0_rgba(62,62,62,0.04)]">
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full p-3 shadow-lg transform scale-110">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">book</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">celebration</span>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="border-t border-outline-variant/30 py-section-gap bg-transparent">
+<div class="flex flex-col items-center gap-unit w-full max-w-[1200px] mx-auto px-container-padding text-center">
+<span class="font-label-personal text-label-personal text-secondary">With love for Uma</span>
+<div class="flex gap-6 mt-4">
+<a href="../home_happy_birthday_uma_desktop/code.html" class="font-body-md text-body-md text-secondary hover:text-primary transition-colors">Our Story</a>
+<a href="../you_gallery_desktop/code.html" class="font-body-md text-body-md text-primary font-bold transition-colors">Gallery</a>
+<a href="../dear_uma_a_letter_desktop/code.html" class="font-body-md text-body-md text-secondary hover:text-primary transition-colors">Leave a Wish</a>
+</div>
+<div class="mt-6 opacity-20 transform scale-150">
+<span class="custom-bow text-primary">୨ৎ</span>
+</div>
+</div>
+</footer>
+<script>
+        const galleryData = [
+            { src: "../Images/Her/IMG-20260222-WA0002.jpg", caption: "your smile makes everything softer", rotation: "-1.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0004.jpg", caption: "the prettiest kind of magic", rotation: "2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0007.jpg", caption: "my favourite face to find in a crowd", rotation: "-2.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0008.jpg", caption: "you make every photo feel warm", rotation: "1.2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0009.jpg", caption: "soft heart, bright soul", rotation: "-0.8deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0024.jpg", caption: "the kind of beautiful that stays", rotation: "2.8deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0027.jpg", caption: "you look like my favourite memory", rotation: "-1.2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0032.jpg", caption: "sunshine looks good on you", rotation: "1.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0038.jpg", caption: "your eyes carry little galaxies", rotation: "-2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0044.jpg", caption: "effortlessly lovely, always", rotation: "0.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0045.jpg", caption: "the sweetest view in every frame", rotation: "-1.8deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0055.jpg", caption: "you make ordinary light look golden", rotation: "2.2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0056.jpg", caption: "my heart pauses here", rotation: "-0.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0057.jpg", caption: "beauty with the kindest heart", rotation: "1.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0070.jpg", caption: "you are art without trying", rotation: "-1.2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0073.jpg", caption: "my favourite kind of peace", rotation: "2.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0074.jpg", caption: "your laugh belongs in every album", rotation: "-2.8deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0081.jpg", caption: "the softest part of my day", rotation: "1.1deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0088.jpg", caption: "you make still moments glow", rotation: "-1.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0091.jpg", caption: "forever pretty, inside first", rotation: "2.4deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0097.jpg", caption: "this smile could fix anything", rotation: "-0.9deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0100.jpg", caption: "you are my calm photograph", rotation: "1.8deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0107.jpg", caption: "the world looks gentler with you", rotation: "-2.1deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0108.jpg", caption: "every angle is a love note", rotation: "0.7deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0110.jpg", caption: "you make memories look cinematic", rotation: "2.9deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0135.jpg", caption: "my favourite chapter in color", rotation: "-1.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0140.jpg", caption: "you carry home in your smile", rotation: "2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0142.jpg", caption: "the prettiest reason to pause", rotation: "-2.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0143.jpg", caption: "you make my heart feel full", rotation: "1.2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0147.jpg", caption: "such a soft and beautiful soul", rotation: "-0.8deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0150.jpg", caption: "you are impossible not to adore", rotation: "2.8deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0159.jpg", caption: "the light found you perfectly", rotation: "-1.2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0168.jpg", caption: "my favourite person, always", rotation: "1.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260222-WA0174.jpg", caption: "you make love look easy", rotation: "-2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260425-WA0014.jpg", caption: "this frame feels like home", rotation: "0.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260425-WA0136.jpg", caption: "you are beautiful in every version", rotation: "-1.8deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260425-WA0258.jpg", caption: "a little sunshine, a lot of magic", rotation: "2.2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG-20260425-WA0263.jpg", caption: "your presence is the whole caption", rotation: "-0.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG_20260221_043034_016.jpg", caption: "my favourite notification, in a photo", rotation: "1.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG_20260318_170615_703.jpg", caption: "you make my world quieter", rotation: "-1.2deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG_20260425_155048_997.jpg", caption: "the sweetest face, the warmest heart", rotation: "2.5deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG_20260506_045411.png", caption: "you are the memory i keep choosing", rotation: "-2.8deg", frame: "768 / 1096", frameClass: "is-natural", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/IMG_20260510_205156_407.jpg", caption: "every photo becomes my favourite", rotation: "1.1deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/Screenshot_20260513_160011.jpg", caption: "you look like a happy forever", rotation: "-1.5deg", frame: "1080 / 2392", frameClass: "is-natural", alt: "Uma looking beautiful in a personal scrapbook photo" },
+            { src: "../Images/Her/Snapchat-461864906.jpg", caption: "the best part of every story", rotation: "2.4deg", frame: "16 / 9", frameClass: "is-rotated", alt: "Uma looking beautiful in a personal scrapbook photo" }
+        ];
+
+        const gallery = document.getElementById('memory-gallery');
+
+        galleryData.forEach((item) => {
+            const card = document.createElement('div');
+            card.className = 'memory-card relative bg-surface-container-lowest p-6 shadow-lg rounded-xl';
+            card.style.transform = `rotate(${item.rotation})`;
+            card.innerHTML = `
+                <div class="washi-tape absolute -top-4 left-1/2 -translate-x-1/2 w-20 h-8 z-10 opacity-80"></div>
+                <div class="gallery-frame ${item.frameClass} relative overflow-hidden bg-surface-container-low" style="aspect-ratio: ${item.frame};">
+                    <img src="${item.src}" alt="${item.alt}" class="transition-transform duration-700 hover:scale-105">
+                    <div class="absolute top-2 right-2 custom-bow text-primary text-xl opacity-60">୨ৎ</div>
+                </div>
+                <div class="mt-6 text-center">
+                    <p class="font-label-personal text-label-personal text-on-surface-variant">${item.caption}</p>
+                    <div class="font-label-caps text-[10px] text-outline mt-2 tracking-widest uppercase">HER</div>
+                </div>
+            `;
+            gallery.appendChild(card);
+        });
+
+        // Simple parallax effect for background
+        window.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) / 100;
+            const moveY = (e.clientY - window.innerHeight / 2) / 100;
+            document.body.style.backgroundPosition = `${moveX}px ${moveY}px`;
+        });
+    </script>
+</body></html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Uma's Birthday | Future</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Caveat&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&amp;family=Inter:wght@400;600&amp;family=Cormorant+Garamond:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@100..900&amp;family=EB+Garamond:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#271818",
+                        "tertiary-fixed": "#ffd9de",
+                        "primary": "#6e595a",
+                        "surface": "#fbf9f6",
+                        "secondary-fixed-dim": "#d7c1c5",
+                        "on-primary-container": "#6c5757",
+                        "tertiary": "#844f59",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#524346",
+                        "on-surface": "#1b1c1a",
+                        "tertiary-container": "#ffc7d0",
+                        "surface-bright": "#fbf9f6",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#efeeeb",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#ebcfcf",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#350e18",
+                        "inverse-on-surface": "#f2f0ed",
+                        "secondary-fixed": "#f4dde1",
+                        "surface-container-high": "#eae8e5",
+                        "secondary-container": "#f1dade",
+                        "surface-dim": "#dbdad7",
+                        "primary-fixed-dim": "#dbc0c0",
+                        "on-primary-fixed-variant": "#554242",
+                        "inverse-primary": "#dbc0c0",
+                        "surface-variant": "#e4e2df",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#6e595a",
+                        "inverse-surface": "#30312f",
+                        "primary-fixed": "#f8dcdc",
+                        "on-secondary-fixed": "#25181b",
+                        "background": "#fbf9f6",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e4e2df",
+                        "secondary": "#6b5a5e",
+                        "outline-variant": "#d2c3c3",
+                        "on-secondary-container": "#6f5e62",
+                        "tertiary-fixed-dim": "#f8b5c0",
+                        "on-tertiary-container": "#814d57",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#1b1c1a",
+                        "outline": "#807474",
+                        "surface-container-low": "#f5f3f0",
+                        "on-tertiary-fixed-variant": "#693842",
+                        "on-surface-variant": "#4f4444"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "64px",
+                        "unit": "8px",
+                        "container-padding": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "label-personal": ["Caveat"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"],
+                        "display": ["EB Garamond"],
+                        "label-caps": ["Inter"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-personal": ["22px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .paper-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+        .washi-tape {
+            background-color: #f3dce0;
+            opacity: 0.8;
+            height: 14px;
+            width: 60px;
+            transform: rotate(-3deg);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .memory-card {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+        }
+        .memory-card:hover {
+            transform: translateY(-8px) scale(1.02) rotate(1deg);
+            box-shadow: 0 20px 30px 0 rgba(62,62,62,0.06);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    
+        body, body *:not(.material-symbols-outlined) {
+            font-family: 'Caveat', cursive !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<div class="fixed inset-0 paper-texture z-0"></div>
+<!-- Site Navigation -->
+<header class="site-header" style="position:sticky;top:0;z-index:100;width:100%;background:rgba(251,249,246,0.84);backdrop-filter:blur(10px);border-bottom:1px solid rgba(130,110,110,0.14);">
+  <nav style="max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <a href="../home_happy_birthday_uma_desktop/code.html" style="font-family:'Caveat',cursive;font-size:1rem;font-weight:700;letter-spacing:0.03em;color:#6e595a;text-decoration:none;white-space:nowrap;">Uma's Birthday</a>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;font-family:'Caveat',cursive;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="../home_happy_birthday_uma_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Home</a>
+      <a href="../happy_birthday_celebration_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Celebration</a>
+      <a href="../dear_uma_a_letter_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Letter</a>
+      <a href="../you_gallery_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Gallery</a>
+      <a href="../our_future_moodboard_desktop/code.html" style="color:#6e595a;font-weight:700;text-decoration:none;border-bottom:1px solid #6e595a;padding-bottom:2px;white-space:nowrap;">Future</a>
+      <a href="../little_notes_board_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Notes</a>
+      <a href="../us_date_memories_with_notes_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Memories</a>
+      <a href="../forever_finale_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Finale</a>
+    </div>
+  </nav>
+</header>
+<main class="relative z-10 w-full max-w-[1200px] mx-auto px-container-padding pb-32">
+<!-- Hero Header -->
+<section class="pt-section-gap pb-12 text-center">
+<div class="inline-block px-4 py-1 mb-4 rounded-full bg-primary-container/30 border border-primary-container text-primary font-label-caps text-label-caps">
+                FOREVER &amp; ALWAYS
+            </div>
+<h2 class="font-[Cormorant Garamond] text-6xl md:text-8xl text-primary font-light mb-4">Our Future</h2>
+<p class="font-label-personal text-label-personal text-secondary max-w-lg mx-auto">
+                A collection of dreams we're building together, one quiet moment at a time.
+            </p>
+<div class="mt-8 flex justify-center">
+<div class="h-px w-24 bg-outline-variant/50 relative">
+<span class="absolute -top-3 left-1/2 -translate-x-1/2 font-label-personal text-primary bg-background px-2">❧</span>
+</div>
+</div>
+</section>
+<!-- Moodboard Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter md:gap-8 items-start">
+<!-- Dream Home - Large Feature -->
+<div class="md:col-span-8 group">
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_0_rgba(62,62,62,0.04)] relative overflow-hidden">
+<div class="absolute -top-2 left-1/2 -translate-x-1/2 washi-tape z-20"></div>
+<div class="aspect-[16/9] w-full overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sun-drenched, minimalist Scandinavian living room with large floor-to-ceiling windows overlooking a misty forest. The interior features warm light wood furniture, cream-colored linen textiles, and a soft neutral palette of ivory and sand. The mood is incredibly serene and airy, illuminated by high-key morning light, perfect for a digital scrapbook aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLyTQTabHnN4PckJRwKpF9H2k7usJ6eUXhimph_PMY_CWevgX9zhsuy8zEdkQDyGCNhRFOlEQOAH_tw-lW1r2m8URPkkbCLJE-qOywGxnHpnhob6gkf7_bOlVuI5jcaveoDwFjesvix3_ezAdfqhw-fOP7DkMHWFy0oHFySPLkfm_eAssHR_9lMPGC3vqWkg91Fs7jEijA6sdNhKcFnyMKvVU1OybvAbzAQGAr7-HTjfFBF706vUfOWw">
+</div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-end gap-4">
+<div>
+<span class="font-label-caps text-label-caps text-primary bg-primary-container/40 px-3 py-1 rounded-full">HOME</span>
+<h3 class="font-headline-md text-headline-md mt-2">The Dream Home</h3>
+</div>
+<p class="font-label-personal text-label-personal text-secondary transform -rotate-1 max-w-xs">
+                            "A quiet space filled with books, morning sunlight, and the smell of fresh coffee..."
+                        </p>
+</div>
+</div>
+</div>
+<!-- Coffee Dates - Portrait -->
+<div class="md:col-span-4 group">
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_0_rgba(62,62,62,0.04)] relative">
+<div class="absolute top-4 -right-4 washi-tape rotate-12 z-20"></div>
+<div class="aspect-[3/4] w-full overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A close-up, aesthetic shot of two artisanal lattes on a rustic marble table at a quiet cafe. The lighting is soft and moody, with warm shadows and golden hour highlights. A small bouquet of dried wildflowers sits to the side. The scene is elegant and peaceful, utilizing a palette of rich creams and dusty rose tones to evoke a sense of intimate connection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFOq3n66w-dWAzcZRBXsH8bc0sVH9Ddd24WpySY3RnsrUPw50GoT4088F8YT-Br5ra-rzPx1QP4aUNP7Yg38i-6ESAgZKBhcpwHcPjGKgvnyTCkIooPeFf5qGc-V542puvdP7baATiFC3j4l8RM7HAGxB3c9FV_kEEAy6vJXJ9c201Lb_NgxAFJjfVgvnCgaTk7yim997HYs4s9o3zD1_-irCzz56ca1_9XkstQ7hlYtOusjAuK0pAww">
+</div>
+<h3 class="font-headline-md text-headline-md">Infinite Coffee Dates</h3>
+<p class="font-label-personal text-label-personal text-secondary mt-2">
+                        Talking for hours about everything and nothing at all.
+                    </p>
+</div>
+</div>
+<!-- Travel Together - Wide -->
+<div class="md:col-span-5 group">
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_0_rgba(62,62,62,0.04)] relative">
+<div class="absolute -top-3 left-10 washi-tape -rotate-6 z-20"></div>
+<div class="aspect-square w-full overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all" data-alt="A vintage-style film photograph of a coastal road in Italy during sunset. A soft-top vintage car is parked by a cliff overlooking the turquoise Mediterranean sea. The sky is painted in hues of soft pink, orange, and lilac. The overall aesthetic is nostalgic and romantic, with a gentle grain and high-key exposure that feels like a cherished travel memory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZxOBKWkYXNB7JIzp_lK9KzuqWpLhlsXzdKazfGiNr8vo8Scd4mTWi9ErioXfIKRQgb04nwwlX2h59T6KUEpxj0V765HuClLX0feGWkbAdSCF5lZTpa_y2RnHAT2Xa0gPaO0Zh-yyWzsO4pT17BhiCx32qGS57x38QPObZeDl7OR5YVa6pNymWq-rfJNlBPglSO8Js85a1ogM8dYKEULoOF5ja-3Rlnol1d7HhqyEvxu6BRuLz15UpKA">
+</div>
+<h3 class="font-headline-md text-headline-md">Travel Together</h3>
+<p class="font-label-personal text-label-personal text-secondary mt-2">
+                        From Italian coasts to Japanese gardens.
+                    </p>
+</div>
+</div>
+<!-- Sunday Mornings - Small Bento -->
+<div class="md:col-span-7 group">
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_0_rgba(62,62,62,0.04)] h-full flex flex-col">
+<div class="grid grid-cols-2 gap-4 mb-6 flex-grow">
+<div class="rounded-lg overflow-hidden h-full">
+<img class="w-full h-full object-cover" data-alt="A minimalist overhead shot of an open journal next to a simple white ceramic mug on rumpled white linen sheets. The morning light is bright and diffused, creating soft, long shadows. The scene feels private and tranquil, reflecting a quiet domestic life. The colors are dominated by pure whites and subtle grays for a clean, premium look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBanhqnhrDSGJ-QYXAweAFkE67KBFqpFyYntN3oDuzXorAsQzH7gHH29wojVZZBHgZ7p12A5IMcbCDyJkYTZ7EuaM05rrkvQuKdPeGn169G7HB-EYoi-bJRyKNlYMJ4h0NuKDOkeQoAss05HdLjYD1bBMnG0s6KD1zG4mgjiA-MMkZEi1G1QlrGktdx0Oy954hd6OKzLNpyg1bS-XidnP6bt0-Ovq5acJUTEM8QFLsYTZb7saLzeIHKA">
+</div>
+<div class="rounded-lg overflow-hidden h-full">
+<img class="w-full h-full object-cover" data-alt="A pair of well-worn leather boots and a simple canvas backpack resting by a sunlit wooden doorway. The textures of the aged wood and soft leather are emphasized by the natural light. This visual represents simple adventures and a grounded life. The palette is warm and organic, fitting the digital heirloom style perfectly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyg20y4oPyIlTSyQOFrXb77iERe7y1v6JNSwxYhkhVQKkCJdQi6e-HoRffhADBJRpUuBBT2-8ZEEyMsfxbFCXK7hKcmdnyqp5AE8jlbqvBXzIzsqT0wwti6vqMj6ORBGFdEmLFm8jciDhSc84XfzGH2ZnpfXpuCsxr0LX0TjNbBkreLrvT0K8zeQIM7t2q5WBnKPYtRCfQ1VfQEeRxMPuQ5Z3oZSyJJMXWgPX85-W8_CnzIojIguO2QQ">
+</div>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md">Slow Sunday Mornings</h3>
+<span class="font-label-personal text-label-personal text-primary">Our favorite ritual.</span>
+</div>
+</div>
+</div>
+<!-- Future Pups -->
+<div class="md:col-span-4 group">
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_0_rgba(62,62,62,0.04)] relative">
+<div class="absolute top-2 left-1/4 washi-tape rotate-45 z-20"></div>
+<div class="aspect-square w-full overflow-hidden rounded-lg mb-4">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all" data-alt="A high-end, soft-focus lifestyle photograph of a golden retriever puppy resting on a plush cream-colored rug. The lighting is ethereal and bright, highlighting the soft textures of the fur and the rug. The image uses a high-key aesthetic with warm, desaturated colors to maintain a sophisticated, minimalist mood consistent with a luxury photo album." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd0cfbiGOI6o7CmFLI0FI0mEpLoE8DlaFNV4X3FkqI59ePYXv5W45JXif1FXQQKxs0OV--iOrBWR1wEa_LMEtgdTa8JFVdF1I4nki_3RSQT7kfo4FzIexVRVE2gZSfGWMsahANh6hTGbucTtxntCuCtjD9ye8bcTxPWxhGIj-5vrPa8tmUgDD0J_qF9se9mO_y_OzkQPTnmPzzpcoNSUKG6Wy6qiGioPbyLRNAG0udLApt2z1XNjzwEA">
+</div>
+<div class="text-center">
+<span class="font-label-caps text-label-caps text-tertiary">MOMENTS</span>
+<h3 class="font-headline-md text-headline-md">A Furry Friend</h3>
+<p class="font-label-personal text-label-personal text-secondary mt-1">Maybe a Golden Retriever named Chai?</p>
+</div>
+</div>
+</div>
+<!-- Quote/Text Card -->
+<div class="md:col-span-8 h-full">
+<div class="memory-card bg-primary-container/20 p-12 rounded-xl flex flex-col justify-center items-center text-center h-full border border-primary-container/40">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">auto_awesome</span>
+<h3 class="font-[Cormorant Garamond] text-4xl text-primary italic mb-6">
+                        "The best thing to hold onto in life is each other."
+                    </h3>
+<div class="font-label-personal text-label-personal text-secondary-container bg-primary px-6 py-2 rounded-full">
+                        Uma + Me
+                    </div>
+</div>
+</div>
+</section>
+<!-- Decorative Divider -->
+<div class="mt-section-gap flex flex-col items-center gap-4">
+<div class="w-16 h-px bg-outline-variant"></div>
+<span class="font-label-personal text-label-personal text-primary text-3xl">𓍯</span>
+<div class="w-16 h-px bg-outline-variant"></div>
+</div>
+</main>
+<!-- Bottom Navigation (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter pb-8 pt-4 bg-surface/80 backdrop-blur-md shadow-[0_-4px_20px_0_rgba(62,62,62,0.04)]">
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">book</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">celebration</span>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="w-full bg-transparent border-t border-outline-variant/30 py-section-gap mb-20 md:mb-0">
+<div class="flex flex-col items-center gap-unit w-full max-w-[1200px] mx-auto px-container-padding text-center">
+<span class="font-label-personal text-label-personal text-secondary">With love for Uma</span>
+<div class="flex gap-6 font-body-md text-body-md text-secondary mt-2">
+<a class="hover:text-primary transition-colors" href="../home_happy_birthday_uma_desktop/code.html">Our Story</a>
+<a class="hover:text-primary transition-colors" href="../you_gallery_desktop/code.html">Gallery</a>
+<a class="hover:text-primary transition-colors" href="../happy_birthday_celebration_desktop/code.html">Leave a Wish</a>
+</div>
+<p class="font-label-caps text-[10px] tracking-widest text-on-surface-variant/50 mt-8">EST. 2024 • A DIGITAL HEIRLOOM</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions for scroll revealing
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.memory-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700', 'ease-out');
+            observer.observe(card);
+        });
+
+        // Subtle parallax on texture
+        window.addEventListener('scroll', () => {
+            const texture = document.querySelector('.paper-texture');
+            const scrolled = window.pageYOffset;
+            texture.style.backgroundPositionY = (scrolled * 0.1) + 'px';
+        });
+    </script>
+</body></html>

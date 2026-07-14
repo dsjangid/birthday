@@ -1,0 +1,267 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Uma's Birthday | Letter</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Inter:wght@400;600&amp;family=Caveat:wght@400..700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#271818",
+                    "tertiary-fixed": "#ffd9de",
+                    "primary": "#6e595a",
+                    "surface": "#fbf9f6",
+                    "secondary-fixed-dim": "#d7c1c5",
+                    "on-primary-container": "#6c5757",
+                    "tertiary": "#844f59",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#524346",
+                    "on-surface": "#1b1c1a",
+                    "tertiary-container": "#ffc7d0",
+                    "surface-bright": "#fbf9f6",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#efeeeb",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#ebcfcf",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#350e18",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed": "#f4dde1",
+                    "surface-container-high": "#eae8e5",
+                    "secondary-container": "#f1dade",
+                    "surface-dim": "#dbdad7",
+                    "primary-fixed-dim": "#dbc0c0",
+                    "on-primary-fixed-variant": "#554242",
+                    "inverse-primary": "#dbc0c0",
+                    "surface-variant": "#e4e2df",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#6e595a",
+                    "inverse-surface": "#30312f",
+                    "primary-fixed": "#f8dcdc",
+                    "on-secondary-fixed": "#25181b",
+                    "background": "#fbf9f6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary": "#6b5a5e",
+                    "outline-variant": "#d2c3c3",
+                    "on-secondary-container": "#6f5e62",
+                    "tertiary-fixed-dim": "#f8b5c0",
+                    "on-tertiary-container": "#814d57",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "outline": "#807474",
+                    "surface-container-low": "#f5f3f0",
+                    "on-tertiary-fixed-variant": "#693842",
+                    "on-surface-variant": "#4f4444"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "64px",
+                    "unit": "8px",
+                    "container-padding": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "label-personal": ["Caveat"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"],
+                    "display": ["EB Garamond"],
+                    "label-caps": ["Inter"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-personal": ["22px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f6;
+            /* Subtle paper texture overlay */
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            background-attachment: fixed;
+        }
+
+        .letter-container {
+            box-shadow: 0 4px 20px 0 rgba(62, 62, 62, 0.04);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .bow-divider {
+            position: relative;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bow-divider::before,
+        .bow-divider::after {
+            content: "";
+            height: 1px;
+            background-color: #d2c3c3;
+            flex-grow: 1;
+        }
+
+        .ink-fade-in {
+            animation: inkFade 2s ease-out forwards;
+        }
+
+        @keyframes inkFade {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .washi-tape {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-1deg);
+            width: 120px;
+            height: 35px;
+            background-color: rgba(235, 207, 207, 0.6);
+            backdrop-filter: blur(2px);
+            mask-image: url("data:image/svg+xml,%3Csvg width='120' height='35' viewBox='0 0 120 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5L5 0L10 3L15 0L20 4L25 1L30 5L35 2L40 6L45 1L50 4L55 0L60 3L65 0L70 4L75 1L80 5L85 2L90 6L95 1L100 4L105 0L110 3L115 0L120 5V30L115 35L110 32L105 35L100 31L95 34L90 30L85 33L80 29L75 34L70 31L65 35L60 32L55 35L50 31L45 34L40 30L35 33L30 29L25 34L20 31L15 35L10 32L5 35L0 30V5Z' fill='black'/%3E%3C/svg%3E");
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='120' height='35' viewBox='0 0 120 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5L5 0L10 3L15 0L20 4L25 1L30 5L35 2L40 6L45 1L50 4L55 0L60 3L65 0L70 4L75 1L80 5L85 2L90 6L95 1L100 4L105 0L110 3L115 0L120 5V30L115 35L110 32L105 35L100 31L95 34L90 30L85 33L80 29L75 34L70 31L65 35L60 32L55 35L50 31L45 34L40 30L35 33L30 29L25 34L20 31L15 35L10 32L5 35L0 30V5Z' fill='black'/%3E%3C/svg%3E");
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    
+        body, body *:not(.material-symbols-outlined) {
+            font-family: 'Caveat', cursive !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-container-padding selection:bg-primary-container selection:text-on-primary-container">
+<!-- Site Navigation -->
+<header class="site-header" style="position:fixed;top:0;left:0;z-index:100;width:100%;background:rgba(251,249,246,0.84);backdrop-filter:blur(10px);border-bottom:1px solid rgba(130,110,110,0.14);">
+  <nav style="max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <a href="../home_happy_birthday_uma_desktop/code.html" style="font-family:'Caveat',cursive;font-size:1rem;font-weight:700;letter-spacing:0.03em;color:#6e595a;text-decoration:none;white-space:nowrap;">Uma's Birthday</a>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;font-family:'Caveat',cursive;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="../home_happy_birthday_uma_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Home</a>
+      <a href="../happy_birthday_celebration_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Celebration</a>
+      <a href="../dear_uma_a_letter_desktop/code.html" style="color:#6e595a;font-weight:700;text-decoration:none;border-bottom:1px solid #6e595a;padding-bottom:2px;white-space:nowrap;">Letter</a>
+      <a href="../you_gallery_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Gallery</a>
+      <a href="../our_future_moodboard_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Future</a>
+      <a href="../little_notes_board_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Notes</a>
+      <a href="../us_date_memories_with_notes_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Memories</a>
+      <a href="../forever_finale_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Finale</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Subtle atmospheric background animation -->
+<div class="fixed inset-0 pointer-events-none opacity-20 z-0">
+
+</div>
+<!-- Main Content Canvas -->
+<main class="relative z-10 w-full max-w-[800px] py-section-gap">
+<!-- Action: Close/Back (Suppressed Nav) -->
+<div class="absolute -top-12 left-0 md:left-[-100px]">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group" onclick="window.location.href='../home_happy_birthday_uma_desktop/code.html'">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="font-label-caps text-label-caps">RETURN</span>
+</button>
+</div>
+<!-- The Letter -->
+<article class="letter-container relative bg-surface-container-lowest p-12 md:p-20 rounded-lg ink-fade-in">
+<!-- Decorative Washi Tape -->
+<div class="washi-tape"></div>
+<!-- Letter Header -->
+<header class="mb-10 text-left">
+<p class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-primary mb-3">A Letter</p>
+<h2 class="font-display text-display text-primary">For Uma</h2>
+<p class="mt-3 font-headline-md text-headline-md italic text-outline">
+                    The Fifteenth of July
+                </p>
+</header>
+<!-- Letter Body -->
+<section class="prose prose-stone max-w-none">
+<h1 class="font-display text-display text-primary mb-12">Dearest Shortiee,</h1>
+<div class="space-y-8 font-headline-lg text-headline-lg leading-relaxed text-on-surface-variant">
+<p>
+                        I've been trying to write this for so long... and honestly, nothing ever feels enough. Every time I think I've written what I feel, it still feels like there's so much left unsaid.
+
+I don't think you realise how much you've become a part of my life. Somewhere between all our conversations, random moments, stupid arguments, laughter, and everything we've been through... you became home to me. You're the person I want to tell everything to, the one I look for first, and the one who somehow makes even an ordinary day feel special just by being in it.                    </p>
+<p>
+                        I remember the quiet mornings, the way the light hit the kitchen floor while you laughed at something only you could see. I remember the milestones, yes, but it is these smaller, silent threads that weave the most beautiful tapestry.
+                    </p>
+<!-- Polaroid Inset -->
+<div class="my-16 flex justify-center">
+<div class="bg-white p-4 pb-12 shadow-lg transform -rotate-2 hover:rotate-0 transition-transform duration-500 cursor-pointer group">
+<div class="w-64 h-64 overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover grayscale-[0.2] contrast-[0.9]" data-alt="WhatsApp image from Date folder" src="../Images/Date/WhatsApp Image 2026-07-14 at 1.08.40 PM.jpeg">
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<p class="mt-4 font-label-personal text-label-personal text-center text-secondary">A summer Afternoon 3rd of July</p>
+</div>
+</div>
+<p>
+                        One thing I'll always admire about you is your heart. The way you care, the way you love, the way you always try... even when it's hard. I just wish you could see yourself the way I do sometimes, because then maybe you'd finally understand why I adore you so much.                    </p>
+<p>
+                        On your birthday, I don't just wish you happiness. I wish you peace. I hope you smile more, overthink a little less, and never forget how deeply you're loved. I hope this year gives you every little thing you've been quietly hoping for, because you deserve that and so much more.                    </p>
+</div>
+</section>
+<!-- Bow Divider -->
+<div class="my-16 bow-divider">
+<span class="font-label-personal text-[40px] text-primary mx-4 leading-none select-none">
+<svg class="inline-block" fill="none" height="40" viewBox="0 0 60 40" width="60" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 20C30 20 20 5 10 5C0 5 0 20 10 20C20 20 30 20 30 20ZM30 20C30 20 40 5 50 5C60 5 60 20 50 20C40 20 30 20 30 20Z" fill="none" stroke="currentColor" stroke-width="1"></path>
+<path d="M30 20C30 28 25 35 15 35M30 20C30 28 35 35 45 35" fill="none" stroke="currentColor" stroke-width="1"></path>
+<circle cx="30" cy="20" fill="currentColor" r="2"></circle>
+</svg>
+</span>
+</div>
+<!-- Signature Area -->
+<footer class="mt-12">
+<p class="font-headline-md text-headline-md italic text-on-surface-variant mb-2">With all my love,</p>
+<p class="font-label-personal text-[48px] text-primary mt-4">Always yours.. Wormiee✨</p>
+</footer>
+</article>
+
+<!-- Micro-interaction Script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const letter = document.querySelector('.letter-container');
+            
+            // Subtle parallax effect on mouse move
+            document.addEventListener('mousemove', (e) => {
+                const xAxis = (window.innerWidth / 2 - e.pageX) / 50;
+                const yAxis = (window.innerHeight / 2 - e.pageY) / 50;
+                letter.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+            });
+
+            // Reset transform when mouse leaves
+            document.addEventListener('mouseleave', () => {
+                letter.style.transform = `rotateY(0deg) rotateX(0deg)`;
+            });
+        });
+    </script>
+</body></html>

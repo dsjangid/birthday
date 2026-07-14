@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Uma's Birthday | Memories</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&amp;family=Inter:wght@400;600&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#271818",
+                    "tertiary-fixed": "#ffd9de",
+                    "primary": "#6e595a",
+                    "surface": "#fbf9f6",
+                    "secondary-fixed-dim": "#d7c1c5",
+                    "on-primary-container": "#6c5757",
+                    "tertiary": "#844f59",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#524346",
+                    "on-surface": "#1b1c1a",
+                    "tertiary-container": "#ffc7d0",
+                    "surface-bright": "#fbf9f6",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#efeeeb",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#ebcfcf",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#350e18",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed": "#f4dde1",
+                    "surface-container-high": "#eae8e5",
+                    "secondary-container": "#f1dade",
+                    "surface-dim": "#dbdad7",
+                    "primary-fixed-dim": "#dbc0c0",
+                    "on-primary-fixed-variant": "#554242",
+                    "inverse-primary": "#dbc0c0",
+                    "surface-variant": "#e4e2df",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#6e595a",
+                    "inverse-surface": "#30312f",
+                    "primary-fixed": "#f8dcdc",
+                    "on-secondary-fixed": "#25181b",
+                    "background": "#fbf9f6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary": "#6b5a5e",
+                    "outline-variant": "#d2c3c3",
+                    "on-secondary-container": "#6f5e62",
+                    "tertiary-fixed-dim": "#f8b5c0",
+                    "on-tertiary-container": "#814d57",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "outline": "#807474",
+                    "surface-container-low": "#f5f3f0",
+                    "on-tertiary-fixed-variant": "#693842",
+                    "on-surface-variant": "#4f4444"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "64px",
+                    "unit": "8px",
+                    "container-padding": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "label-personal": ["Caveat"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"],
+                    "display": ["EB Garamond"],
+                    "label-caps": ["Inter"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-personal": ["22px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .paper-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.05;
+        }
+        .washi-tape {
+            background-color: #F3DCE0;
+            opacity: 0.8;
+            transform: rotate(-2deg);
+        }
+        .memory-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .memory-card:hover {
+            transform: translateY(-8px) rotate(1deg);
+            box-shadow: 0 30px 30px 0 rgba(62, 62, 62, 0.06);
+        }
+
+        .date-photo-frame {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e4e2df;
+        }
+        .date-photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    
+        body, body *:not(.material-symbols-outlined) {
+            font-family: 'Caveat', cursive !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden min-h-screen relative">
+<!-- Background Texture -->
+<div class="fixed inset-0 pointer-events-none paper-texture"></div>
+<!-- Site Navigation -->
+<header class="site-header" style="position:sticky;top:0;z-index:100;width:100%;background:rgba(251,249,246,0.84);backdrop-filter:blur(10px);border-bottom:1px solid rgba(130,110,110,0.14);">
+  <nav style="max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <a href="../home_happy_birthday_uma_desktop/code.html" style="font-family:'Caveat',cursive;font-size:1rem;font-weight:700;letter-spacing:0.03em;color:#6e595a;text-decoration:none;white-space:nowrap;">Uma's Birthday</a>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;font-family:'Caveat',cursive;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="../home_happy_birthday_uma_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Home</a>
+      <a href="../happy_birthday_celebration_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Celebration</a>
+      <a href="../dear_uma_a_letter_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Letter</a>
+      <a href="../you_gallery_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Gallery</a>
+      <a href="../our_future_moodboard_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Future</a>
+      <a href="../little_notes_board_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Notes</a>
+      <a href="../us_date_memories_with_notes_desktop/code.html" style="color:#6e595a;font-weight:700;text-decoration:none;border-bottom:1px solid #6e595a;padding-bottom:2px;white-space:nowrap;">Memories</a>
+      <a href="../forever_finale_desktop/code.html" style="color:#4f4444;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;white-space:nowrap;">Finale</a>
+    </div>
+  </nav>
+</header>
+<main class="max-w-[1200px] mx-auto px-container-padding pb-section-gap relative">
+<!-- Hero Section -->
+<section class="py-section-gap flex flex-col items-center text-center">
+<div class="mb-unit">
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container px-3 py-1 rounded-full">COLLECTED MOMENTS</span>
+</div>
+<h2 class="font-display text-display text-primary mb-4">Through the Lens</h2>
+<div class="w-16 h-px bg-outline-variant mb-6"></div>
+<p class="font-label-personal text-label-personal text-secondary max-w-md mx-auto">
+                Capturing the light, the laughter, and the quiet magic of another beautiful year.
+            </p>
+<!-- Delicate Bow Flourish -->
+<div class="mt-8 opacity-40">
+<svg class="text-primary" fill="none" height="30" viewbox="0 0 60 30" width="60" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 15 20 0 10 0C0 0 0 15 10 15C20 15 30 15 30 15ZM30 15C30 15 40 0 50 0C60 0 60 15 50 15C40 15 30 15 30 15Z" stroke="currentColor" stroke-linecap="round" stroke-width="1"></path>
+<path d="M30 15C30 15 25 30 20 30" stroke="currentColor" stroke-linecap="round" stroke-width="1"></path>
+<path d="M30 15C30 15 35 30 40 30" stroke="currentColor" stroke-linecap="round" stroke-width="1"></path>
+</svg>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+<!-- Polaroid 1 -->
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-lg relative transform md:rotate-[-2deg] md:mt-8">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 washi-tape w-24 h-8 z-10"></div>
+<div class="date-photo-frame overflow-hidden rounded-lg mb-4" style="aspect-ratio: 3072 / 4096;">
+<img src="../Images/Date/IMG_20260708_155025.jpg" alt="A memory from our date with Uma">
+</div>
+<div class="text-center">
+<p class="font-label-personal text-label-personal text-primary">Wish i could go back in time and freeze the moment here adore you for infinity</p>
+<div class="mt-2 opacity-30 flex justify-center">
+<svg class="text-primary" fill="none" height="20" viewbox="0 0 60 30" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 15 20 0 10 0C0 0 0 15 10 15C20 15 30 15 30 15ZM30 15C30 15 40 0 50 0C60 0 60 15 50 15C40 15 30 15 30 15Z" stroke="currentColor" stroke-width="1"></path>
+</svg>
+</div>
+</div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary-fixed p-3 shadow-lg transform rotate-3 z-20 flex items-center justify-center text-center">
+<p class="font-label-personal text-on-secondary-fixed-variant text-body-md leading-tight">Thinking of this day...</p>
+</div></div>
+<!-- Polaroid 2 -->
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-lg relative transform md:rotate-[3deg]">
+<div class="date-photo-frame overflow-hidden rounded-lg mb-4" style="aspect-ratio: 2304 / 4096;">
+<img src="../Images/Date/IMG_20260708_175353.jpg" alt="A memory from our date with Uma">
+</div>
+<div class="text-center">
+<p class="font-label-personal text-label-personal text-primary">The first touch of the day</p>
+<div class="mt-2 opacity-30 flex justify-center">
+<svg class="text-primary" fill="none" height="20" viewbox="0 0 60 30" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 15 20 0 10 0C0 0 0 15 10 15C20 15 30 15 30 15ZM30 15C30 15 40 0 50 0C60 0 60 15 50 15C40 15 30 15 30 15Z" stroke="currentColor" stroke-width="1"></path>
+</svg>
+</div>
+</div>
+</div><div class="hidden md:flex absolute left-1/2 -translate-x-1/2 mt-[-40px] w-28 h-28 bg-primary-fixed p-4 shadow-lg transform -rotate-6 z-20 items-center justify-center text-center">
+<p class="font-label-personal text-on-primary-fixed-variant text-body-md leading-tight">You looked so happy here</p>
+</div>
+<!-- Polaroid 3 -->
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-lg relative transform md:rotate-[-1deg] md:mt-16">
+<div class="date-photo-frame overflow-hidden rounded-lg mb-4" style="aspect-ratio: 2304 / 4096;">
+<img src="../Images/Date/IMG_20260708_175435.jpg" alt="A memory from our date with Uma">
+</div>
+<div class="text-center">
+<p class="font-label-personal text-label-personal text-primary">Laughter caught in time</p>
+<div class="mt-2 opacity-30 flex justify-center">
+<svg class="text-primary" fill="none" height="20" viewbox="0 0 60 30" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 15 20 0 10 0C0 0 0 15 10 15C20 15 30 15 30 15ZM30 15C30 15 40 0 50 0C60 0 60 15 50 15C40 15 30 15 30 15Z" stroke="currentColor" stroke-width="1"></path>
+</svg>
+</div>
+</div>
+<div class="absolute -top-6 -left-6 w-24 h-24 bg-tertiary-fixed p-3 shadow-lg transform -rotate-12 z-20 flex items-center justify-center text-center">
+<p class="font-label-personal text-on-tertiary-fixed-variant text-body-md leading-tight">Let's go back soon?</p>
+</div></div>
+<!-- Polaroid 4 -->
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-lg relative transform md:rotate-[2deg] md:mt-[-20px]">
+<div class="washi-tape absolute top-0 right-10 w-16 h-6 z-10 -rotate-12"></div>
+<div class="date-photo-frame overflow-hidden rounded-lg mb-4" style="aspect-ratio: 2304 / 4096;">
+<img src="../Images/Date/IMG_20260708_175539.jpg" alt="A memory from our date with Uma">
+</div>
+<div class="text-center">
+<p class="font-label-personal text-label-personal text-primary">Quiet moment together</p>
+<div class="mt-2 opacity-30 flex justify-center">
+<svg class="text-primary" fill="none" height="20" viewbox="0 0 60 30" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 15 20 0 10 0C0 0 0 15 10 15C20 15 30 15 30 15ZM30 15C30 15 40 0 50 0C60 0 60 15 50 15C40 15 30 15 30 15Z" stroke="currentColor" stroke-width="1"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Polaroid 5 -->
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-lg relative transform md:rotate-[-3deg] md:mt-12">
+<div class="date-photo-frame overflow-hidden rounded-lg mb-4" style="aspect-ratio: 2304 / 4096;">
+<img src="../Images/Date/IMG_20260708_175540.jpg" alt="A memory from our date with Uma">
+</div>
+<div class="text-center">
+<p class="font-label-personal text-label-personal text-primary">Then you ask why i adore you so muchh</p>
+<div class="mt-2 opacity-30 flex justify-center">
+<svg class="text-primary" fill="none" height="20" viewbox="0 0 60 30" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 15 20 0 10 0C0 0 0 15 10 15C20 15 30 15 30 15ZM30 15C30 15 40 0 50 0C60 0 60 15 50 15C40 15 30 15 30 15Z" stroke="currentColor" stroke-width="1"></path>
+</svg>
+</div>
+</div>
+<div class="absolute -bottom-2 -left-8 w-28 h-20 bg-secondary-fixed-dim p-3 shadow-lg transform rotate-6 z-20 flex items-center justify-center text-center">
+<p class="font-label-personal text-on-secondary-fixed-variant text-body-md leading-tight">My favorite memory</p>
+</div></div>
+<!-- Polaroid 6 -->
+<div class="hidden md:flex absolute right-0 -mt-12 w-20 h-20 bg-surface-container-high p-2 shadow-md transform rotate-12 z-20 items-center justify-center text-center">
+<p class="font-label-personal text-on-surface-variant text-body-md leading-tight">Love this!</p>
+</div><div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-lg relative transform md:rotate-[1deg] md:mt-4">
+<div class="washi-tape absolute top-1/2 -left-4 -translate-y-1/2 w-6 h-20 z-10 rotate-3"></div>
+<div class="date-photo-frame overflow-hidden rounded-lg mb-4" style="aspect-ratio: 3672 / 6528;">
+<img src="../Images/Date/IMG_20260708_180410.jpg" alt="A memory from our date with Uma">
+</div>
+<div class="text-center">
+<p class="font-label-personal text-label-personal text-primary">My new favorite memory</p>
+<div class="mt-2 opacity-30 flex justify-center">
+<svg class="text-primary" fill="none" height="20" viewbox="0 0 60 30" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 15 20 0 10 0C0 0 0 15 10 15C20 15 30 15 30 15ZM30 15C30 15 40 0 50 0C60 0 60 15 50 15C40 15 30 15 30 15Z" stroke="currentColor" stroke-width="1"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Polaroid 7 -->
+<div class="memory-card bg-surface-container-lowest p-6 rounded-xl shadow-lg relative transform md:rotate-[-2deg] md:mt-[-40px]">
+<div class="date-photo-frame overflow-hidden rounded-lg mb-4" style="aspect-ratio: 2304 / 4096;">
+<img src="../Images/Date/IMG_20260708_181939.jpg" alt="A memory from our date with Uma">
+</div>
+<div class="text-center">
+<p class="font-label-personal text-label-personal text-primary">A day to remember</p>
+<div class="mt-2 opacity-30 flex justify-center">
+<svg class="text-primary" fill="none" height="20" viewbox="0 0 60 30" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 15 20 0 10 0C0 0 0 15 10 15C20 15 30 15 30 15ZM30 15C30 15 40 0 50 0C60 0 60 15 50 15C40 15 30 15 30 15Z" stroke="currentColor" stroke-width="1"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Bow at the end -->
+<div class="flex justify-center py-section-gap opacity-30">
+<svg class="text-secondary" fill="none" height="60" viewbox="0 0 120 60" width="120" xmlns="http://www.w3.org/2000/svg">
+<path d="M60 30C60 30 40 0 20 0C0 0 0 30 20 30C40 30 60 30 60 30ZM60 30C60 30 80 0 100 0C120 0 120 30 100 30C80 30 60 30 60 30Z" stroke="currentColor" stroke-width="0.5"></path>
+<path d="M60 30C60 40 50 60 40 60" stroke="currentColor" stroke-width="0.5"></path>
+<path d="M60 30C60 40 70 60 80 60" stroke="currentColor" stroke-width="0.5"></path>
+</svg>
+</div>
+</main>
+<!-- Footer -->
+<footer class="full-width py-section-gap border-t border-outline-variant/30 bg-transparent">
+<div class="flex flex-col items-center gap-unit w-full max-w-[1200px] mx-auto px-container-padding text-center">
+<h4 class="font-label-personal text-label-personal text-secondary">With love for Uma</h4>
+<div class="flex gap-gutter my-4">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="../home_happy_birthday_uma_desktop/code.html">Our Story</a>
+<a class="font-body-md text-body-md text-primary font-bold" href="../you_gallery_desktop/code.html">Gallery</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="../happy_birthday_celebration_desktop/code.html">Leave a Wish</a>
+</div>
+<p class="text-[10px] uppercase tracking-[0.2em] text-outline">© 2024 DIGITAL HEIRLOOM PROJECT</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter pb-8 pt-4 bg-surface/80 backdrop-blur-md shadow-[0_-4px_20px_0_rgba(62,62,62,0.04)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform" href="../home_happy_birthday_uma_desktop/code.html">
+<span class="material-symbols-outlined">auto_awesome</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform" href="../home_happy_birthday_uma_desktop/code.html">
+<span class="material-symbols-outlined">favorite</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full p-3 hover:scale-110 transition-transform" href="../home_happy_birthday_uma_desktop/code.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">book</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:scale-110 transition-transform" href="../home_happy_birthday_uma_desktop/code.html">
+<span class="material-symbols-outlined">celebration</span>
+</a>
+</div>
+<!-- Floating Action Button (Only on main content screens) -->
+<button class="fixed bottom-24 right-6 md:bottom-10 md:right-10 w-14 h-14 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform active:scale-95 z-40">
+<span class="material-symbols-outlined">add_photo_alternate</span>
+</button>
+<script>
+        // Simple intersection observer for scroll reveal effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.memory-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body></html>
